@@ -1,4 +1,21 @@
-$colorSelectSite: #F1231D
+$colorSelectSite: #2cbdc7;
+$widhtSite:1000 px;
+@import "vars";
+    @import "mixins";
+    .bradcrm{font-weight: 100;
+    font-size: 24px;
+    line-height: 29px;}
 
-.top-head_heading {font-style: normal;font-weight: 400;font-size: 24px;
-line-height: 29px;}
+    .bradcrm1{font-weight: 100;
+   color: $colorSelectSite;
+    line-height: 29px;}
+
+    a{text-decoration: none;
+   @include centerflex}
+
+    .header{border: 1px solid #000;
+    height: 400px;width: $widhtSite;}
+
+    .center {
+padding-left: calc(50% - $widthSite / 2);
+padding-right: calc(50% - $widthSite / 2);}
