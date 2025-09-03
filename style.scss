@@ -1,7 +1,13 @@
 $colorSelectSite: #2cbdc7;
 $widhtSite:1000 px;
+$colorText: #adc448;
+$backBlock: rgb(0, 0, 0);
+
 @import "vars";
     @import "mixins";
+
+
+body{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
     .bradcrm{font-weight: 100;
     font-size: 24px;
     line-height: 29px;}
@@ -13,9 +19,91 @@ $widhtSite:1000 px;
     a{text-decoration: none;
    @include centerflex}
 
-    .header{border: 1px solid #000;
-    height: 400px;width: $widhtSite;}
-
-    .center {
+ .center {
 padding-left: calc(50% - $widthSite / 2);
 padding-right: calc(50% - $widthSite / 2);}
+
+.header{padding-top: 20px;
+padding-bottom: 20px;
+color: $backBlock;}
+
+.product {
+    width: 360px;
+display: flex;
+flex-direction: column;
+
+&__img {
+    width: 100%;
+}
+
+
+    &__content {
+        background-color: #F8F8F8;
+        padding: 24px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__name {
+        font-size: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: $colorText;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+    }
+
+    &__price {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F16D7F;
+    }
+
+
+
+
+.top-head {
+    background: #F8F3F4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center {
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+}
+
+.top-head__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: $ColorSelectSite;
+}
+
+.breadcrumbs__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+
+.breadcrumbs__link_site {
+    font-weight: 700;
+    color: $ColorSelectSite;
+}}
