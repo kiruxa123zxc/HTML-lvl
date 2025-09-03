@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header center">
+  <div class="box-content">
+      <header class="header center">
 <div class="header__left">
     <a href="index.html" class="logo"><img src="" alt=""></a>
 </div>
 <div class="header__right">
-
+    
+        <label for="burger"><img style="height: 50px;" src="burger-menu-svgrepo-com.svg" alt=""></label>
+        <input id="burger" type="checkbox">
+    <nav class="nav">
+        <ul>
+            <li><a href="">link</a></li>
+            <li><a href="">link</a></li>
+            <li><a href="">link</a></li>
+            <li><a href="">link</a></li>
+        </ul>
+    </nav>
 </div>
 </header>
 <div class="top-head center">
@@ -23,7 +34,87 @@
         <a href="#" class="breadcrumbs__link breadcrumbs__link_site"> NEW ARRIVALS</a>
     </nav>
 </div>
-<div class="product-box cnter">
+<div class="filter-sort center" >
+    <details class="filter">
+        <summary class="filter__summary"><span class="filter__heading">Filter</span></summary>
+        <div class="filter__content">
+
+            <details class="filter__item">
+                <summary class="filter__heading">CATEGORY</summary>
+               <div class="filter_zxc"> 
+                <a href="" class="filter__link">Обувь</a>
+                <a href="" class="filter__link">Футболки</a>
+                <a href="" class="filter__link">Кофты</a></div>
+        </div>
+
+          <div class="filter__content">
+
+            <details class="filter__item">
+                <summary class="filter__heading">Brand</summary>
+               <div class="filter_zxc"> 
+                <a href="" class="filter__link">Найк</a>
+                <a href="" class="filter__link">Пума</a>
+                <a href="" class="filter__link">Адидас</a></div>
+        </div>
+          <div class="filter__content">
+
+            <details class="filter__item">
+                <summary class="filter__heading">DETALI</summary>
+               <div class="filter_zxc"> 
+                <a href="" class="filter__link">Обувь</a>
+                <a href="" class="filter__link">Футболки</a>
+                <a href="" class="filter__link">Кофты</a></div>
+        </div>
+        
+    </details>
+    <div class="sort">
+        <details>
+            <summary><span>Now</span></summary>
+        </details>
+    </div>
+
+     <div class="sort">
+        <details>
+            <summary ><span >Size</span>  </summary>
+            <div class="sort__box">
+                <div class="sort__cheack">
+                    <input id="sort__cheack1" type="checkbox">
+                    <label for="sort__cheack1">XS</label>
+                </div>
+                 <div class="sort__cheack">
+                    <input id="sort__cheack2" type="checkbox">
+                    <label for="sort__cheack2">S</label>
+                </div>
+                  <div class="sort__cheack">
+                    <input id="sort__cheack3" type="checkbox">
+                    <label for="sort__cheack3">L</label>
+                </div>
+            </div>
+          
+        </details>
+        <details>
+            <summary ><span >Price</span>  </summary>
+            <div class="sort__box">
+                <div class="sort__cheack">
+                    <input id="sort__cheack1" type="checkbox">
+                    <label for="sort__cheack1">XS</label>
+                </div>
+                 <div class="sort__cheack">
+                    <input id="sort__cheack2" type="checkbox">
+                    <label for="sort__cheack2">S</label>
+                </div>
+                  <div class="sort__cheack">
+                    <input id="sort__cheack3" type="checkbox">
+                    <label for="sort__cheack3">L</label>
+                </div>
+            </div>
+          
+        </details>
+    </div>
+    
+</div>
+
+<div class="product-box center">
     <div class="product">
         <img src="Callen.jpg" alt="product">
         <div class="product__content">
@@ -34,7 +125,17 @@
     </div>
 
 </div>
+<div class="product-box center">
+    <div class="product">
+        <img src="Callen.jpg" alt="product">
+        <div class="product__content">
+            <a href="#" class="product__name">ELLERY X M'O CAPSUle</a>
+            <p class="product__text">Know for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="product__price">$52.00</p>
+        </div>
+    </div>
 
-
+</div>
+  </div>
 </body>
 </html>
