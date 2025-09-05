@@ -1,0 +1,5 @@
+@mixin centerflex($propery) {
+    -webkit-transform: $propery;
+    -ms-transform: $propery;
+    transform: $propery;
+}
