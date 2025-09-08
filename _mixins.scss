@@ -1,5 +1,7 @@
-@mixin centerflex($propery) {
-    -webkit-transform: $propery;
-    -ms-transform: $propery;
-    transform: $propery;
+@mixin centerflex(){
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
 }
