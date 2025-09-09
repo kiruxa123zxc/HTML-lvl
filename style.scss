@@ -90,19 +90,39 @@ flex-direction: column;
         color: #F16D7F;
     }
 }
+.breadcrumbs{
+    &__ul{
+        list-style: none;
+        display: flex;
+    }
+    &__li:not(:last-child)::after {
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
+         font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+         color: #636363;
 
-.breadcrumbs__link {
+        
+
+    }
+  
+    &__link {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     color: #636363;
 }
+   &__li:last-child .breadcrumbs__link{
+        font-weight: 700;
+        color: $ColorSelectSite;
+     }
 
-.breadcrumbs__link_site {
-    font-weight: 700;
-    color: $ColorSelectSite;
 }
+
 
 .filter{
     width: 360px;
