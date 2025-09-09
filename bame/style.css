@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    background-color: #ccc;
+    min-height: 700px;
+}
+
+.paralax{
+    min-height: 350px;
+    background-image: url(https://ak.picdn.net/shutterstock/videos/31882249/thumb/1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+   margin-top: 20%;
+    width: 20%;
+    position: sticky;
+    top: 20%;
+    margin-left: 10%;
+}
+.main{
+    margin-left: 30%;
+}
+html{
+    scroll-behavior: smooth;
+}
